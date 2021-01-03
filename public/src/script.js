@@ -90,16 +90,21 @@ function create() {
   camera.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
     
   cursors = this.input.keyboard.createCursorKeys();
-    
+
+  this.add.
+  text(16, 16, 'Arrow keys to move', {
+    font: "18px monospace",
+    fill: "#000000",
+    padding: { x: 20, y: 10 },
+    backgroundColor: "#ffffff" }).
+
+  setScrollFactor(0).
+  setDepth(30);
 }  
     
 function update(time, delta) {
   const speed = 175;
   const prevVelocity = player.body.velocity.clone();
-    
-      // if (this.physics.map.overlap(this.player, this.npcLayer)) {
-      //   alert("Welcome");
-      // }
     
   player.body.setVelocity(0);
     
