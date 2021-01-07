@@ -37,10 +37,9 @@ function create() {
   const map = this.make.tilemap({ key: "map" });
   const tileset = map.addTilesetImage("bigtileset", "terreno");
     
-  const ceiling = map.createLayer("ceiling", tileset, 60, 60);
-  const world = map.createLayer("world", tileset, 60, 60);
-  const floor = map.createLayer("floor", tileset, 60, 60);
-  const npcLayer = map.createLayer("NPC", tileset, 60, 60);
+  const ceiling = map.createLayer("ceiling", tileset, 0, 0);
+  const world = map.createLayer("world", tileset, 0, 0);
+  const floor = map.createLayer("floor", tileset, 0, 0);
     
   world.setCollisionByProperty({ collide: true });
   world.setDepth(10);
