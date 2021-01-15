@@ -46,7 +46,7 @@ function create() {
   world.setDepth(10);
   npcLayer.setCollisionByProperty({ collide: true });
   npcLayer.setDepth(20);
-    
+  
   const spawnPoint = map.findObject("Objects", obj => obj.name === "Spawn Point");
 
 
