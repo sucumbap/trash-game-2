@@ -40,24 +40,82 @@ function create() {
   const ceiling = map.createLayer("ceiling", tileset, 0, 0);
   const world = map.createLayer("world", tileset, 0, 0);
   const floor = map.createLayer("floor", tileset, 0, 0);
+  const npcLayer = map.createLayer("npcLayer", tileset, 0, 0);
     
   world.setCollisionByProperty({ collide: true });
   world.setDepth(10);
+  npcLayer.setCollisionByProperty({ collide: true });
+  npcLayer.setDepth(20);
     
   const spawnPoint = map.findObject("Objects", obj => obj.name === "Spawn Point");
 
-  world.setTileLocationCallback(12, 55, 1, 1, ()=> {
-    alert("welcome to cum cock city");
-    world.setTileLocationCallback(12, 55, 1, 1, null);
 
+  world.setTileLocationCallback(10, 55, 1, 1, ()=> {
+    //gajo inicial
+    alert("welcome sdfgwerg ewr to city");
+    world.setTileLocationCallback(10, 55, 1, 1, null);
   });
-      
+
+  world.setTileLocationCallback(21, 51, 2, 2, ()=> {
+    //tree
+    alert("welcome sdfgwerg ewr to city");
+    world.setTileLocationCallback(21, 51, 2, 2, null);
+  });
+
+  world.setTileLocationCallback(52, 50, 1, 1, ()=> {
+    //gajo do cemiterio
+    alert("welcome sdfgwerg ewr to city");
+    world.setTileLocationCallback(52, 50, 1, 1, null);
+  });
+
+  world.setTileLocationCallback(38, 26, 1, 1, ()=> {
+    //gangster da casa
+    alert("welcome sdfgwerg ewr to city");
+    world.setTileLocationCallback(36, 26, 1, 1, null);
+  });
+
+  world.setTileLocationCallback(8, 25, 1, 1, ()=> {
+    //steve da casa
+    alert("welcome sdfgwerg ewr to city");
+    world.setTileLocationCallback(8, 25, 1, 1, null);
+  });
+
+  world.setTileLocationCallback(2, 15, 1, 1, ()=> {
+    //gangster da rua
+    alert("welcome sdfgwerg ewr to  city");
+    world.setTileLocationCallback(2, 15, 1, 1, null);
+  });
+
+  world.setTileLocationCallback(12, 4, 1, 1, ()=> {
+    //mago
+    alert("welcome sdfgwerg ewr to  city");
+    world.setTileLocationCallback(12, 4, 1, 1, null);
+  });
+
+  world.setTileLocationCallback(12, 5, 1, 1, ()=> {
+    //bau do mago
+    alert("welcome sdfgwerg ewr to  city");
+    world.setTileLocationCallback(12, 5, 1, 1, null);
+  });
+
+  world.setTileLocationCallback(7, 33, 1, 1, ()=> {
+    //bau da lagoa
+    alert("welcome sdfgwerg ewr to  city");
+    world.setTileLocationCallback(7, 33, 1, 1, null);
+  });
+
+  world.setTileLocationCallback(10, 53, 1, 1, ()=> {
+    //bau inicial
+    alert("welcome sdfgwerg ewr to city");
+    world.setTileLocationCallback(10, 53, 1, 1, null);
+  });
     
   player = this.physics.add.sprite(spawnPoint.x, spawnPoint.y, "sprite", "misa-front").
   setSize(30, 40).
   setOffset(0, 24);
     
   this.physics.add.collider(player, world);
+  this.physics.add.collider(player, npcLayer);
     
   const anims = this.anims;
     
