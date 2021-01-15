@@ -45,6 +45,8 @@ function create() {
   world.setDepth(10);
     
   const spawnPoint = map.findObject("Objects", obj => obj.name === "Spawn Point");
+
+  world.setTileLocationCallback(12, 55, 1, 1, ()=> {alert("welcome to cum cock city")});
       
     
   player = this.physics.add.sprite(spawnPoint.x, spawnPoint.y, "sprite", "misa-front").
