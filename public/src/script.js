@@ -51,62 +51,72 @@ function create() {
 
 
   world.setTileLocationCallback(10, 55, 1, 1, ()=> {
-    //gajo inicial
-    alert("welcome sdfgwerg ewr to city");
+    //steve inicial
+    let i = Math.floor((Math.random() * 9));
+    alert(`Steve diz: ${facts[i]}`);
     world.setTileLocationCallback(10, 55, 1, 1, null);
   });
 
   world.setTileLocationCallback(21, 51, 2, 2, ()=> {
     //tree
-    alert("welcome sdfgwerg ewr to city");
+    let i = Math.floor((Math.random() * 9));
+    alert(`Árvore diz: ${facts[i]}`);
     world.setTileLocationCallback(21, 51, 2, 2, null);
   });
 
   world.setTileLocationCallback(52, 50, 1, 1, ()=> {
     //gajo do cemiterio
-    alert("welcome sdfgwerg ewr to city");
+    let i = Math.floor((Math.random() * 9));
+    alert(`Gravekeeper diz: ${facts[i]}`);
     world.setTileLocationCallback(52, 50, 1, 1, null);
   });
 
   world.setTileLocationCallback(38, 26, 1, 1, ()=> {
     //gangster da casa
-    alert("welcome sdfgwerg ewr to city");
+    let i = Math.floor((Math.random() * 9));
+    alert(`Gangster diz: ${facts[i]}`);
     world.setTileLocationCallback(36, 26, 1, 1, null);
   });
 
   world.setTileLocationCallback(8, 25, 1, 1, ()=> {
     //steve da casa
-    alert("welcome sdfgwerg ewr to city");
+    let i = Math.floor((Math.random() * 9));
+    alert(`Steve diz: ${facts[i]}`);
     world.setTileLocationCallback(8, 25, 1, 1, null);
   });
 
   world.setTileLocationCallback(2, 15, 1, 1, ()=> {
     //gangster da rua
-    alert("welcome sdfgwerg ewr to  city");
+    let i = Math.floor((Math.random() * 9));
+    alert(`Gangster diz: ${facts[i]}`);
     world.setTileLocationCallback(2, 15, 1, 1, null);
   });
 
   world.setTileLocationCallback(12, 4, 1, 1, ()=> {
     //mago
-    alert("welcome sdfgwerg ewr to  city");
+    let i = Math.floor((Math.random() * 9));
+    alert(`Mago diz: ${facts[i]}`);
     world.setTileLocationCallback(12, 4, 1, 1, null);
   });
 
   world.setTileLocationCallback(12, 5, 1, 1, ()=> {
     //bau do mago
-    alert("welcome sdfgwerg ewr to  city");
+    let i = Math.floor((Math.random() * 9));
+    alert(`Mago diz: ${facts[i]}`);
     world.setTileLocationCallback(12, 5, 1, 1, null);
   });
 
   world.setTileLocationCallback(7, 33, 1, 1, ()=> {
     //bau da lagoa
-    alert("welcome sdfgwerg ewr to  city");
+    let i = Math.floor((Math.random() * 9));
+    alert(`Baú diz: ${facts[i]}`);
     world.setTileLocationCallback(7, 33, 1, 1, null);
   });
 
   world.setTileLocationCallback(10, 53, 1, 1, ()=> {
     //bau inicial
-    alert("welcome sdfgwerg ewr to city");
+    let i = Math.floor((Math.random() * 9));
+    alert(`Baú diz: ${facts[i]}`);
     world.setTileLocationCallback(10, 53, 1, 1, null);
   });
     
@@ -202,3 +212,15 @@ function update(time, delta) {
   if (prevVelocity.y > 0) player.setTexture("sprite", "misa-front");
   }
 }
+
+facts [
+  "A palavra “Física” vem do termo physis, que significa natureza, portanto, esta ciência dedica-se à compreensão de fenómenos naturais, reconstruindo-os por meio de experiências e descrevendo-os através de equações matemáticos.",
+  "Se dois objetos de massas diferentes forem abandonados de uma mesma altura, chegarão ao solo ao mesmo tempo, se a resistência do ar puder ser desconsiderada. Ou seja, podemos largar uma bola de bowling e um berlinde da mesma altura, e vão chegar ao chão ao mesmo tempo.",
+  "Quando um raio alcança o solo, uma segunda descarga elétrica sobe do chão até as nuvens, seguindo o mesmo caminho que a energia usou para descer. O calor gerado por esse segundo raio faz com que o ar ao seu redor chegue a uma temperatura de até 27 mil °C. E como tudo acontece muito rápido, o ar não tem tempo de se expandir e acaba a se condensar, aumentando a muito sua pressão atmosférica. Esse ar, então,“explode” e cria uma onda de choque. É essa rápida expansão do ar que causa o barulho que ouvimos!",
+  "A luz do Sol leva mais de 8 minutos para chegar à Terra e a sua temperatura chega a 5 500 ºC.",
+  "O céu da Terra é azul porque as moléculas de azoto e de oxigénio, que formam a maior parte da atmosfera, filtram a componente azul da luz solar. Já em Marte, o céu é cor-de-rosa, em Urano é verde, em Vénus é amarelo-laranja, em Júpiter é preto e não se vêem estrelas, e em Plutão é negro, mas estrelado.",
+  "Um espirro pode atingir uma velocidade alucinante - até 160 km por hora.",
+  "Os cadernos da cientista Marie Curie, responsável pela descoberta dos elementos químicos polónio e rádio, ainda são radioativos! O longo período de exposição à radioatividade foi fatal para Marie Curie e, mesmo mais de um século depois das experiências, os cadernos que ela usava continuam altamente perigosos.",
+  "O ano de 1995 foi o ano mais quente da Terra, pelo menos, desde há cento e quarenta anos, quando se iniciou o registo regular das temperaturas.",
+  "A água pura em si não conduz eletricidade. São as impurezas na água, como o sal, que o fazem. Mas como a água com que nos deparamos diariamente não é 100% pura, o melhor a fazer é manter o secador longe da banheira."
+];
