@@ -1,5 +1,8 @@
 html,
-body,
+body {
+  background-color: #042F3A;
+}
+
 .img-start {
   height: 100%;
   width: 100%;
@@ -131,3 +134,10 @@ code span {
   color:green;
 }
 
+.start-img {
+  width: 800;
+  height: 600;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
