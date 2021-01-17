@@ -272,7 +272,7 @@ let facts = [
   "O sangue circula a uma velocidade de 2 km por hora.",
   "Um adulto pisca os olhos 24 vezes por minuto e cada piscadela dura apenas 50 milésimos de segundo. Desta forma ficamos sem ver 1,2 segundos em cada minuto.",
   "Gotas de chuva não caem como gotas de lágrimas. A verdade é que elas têm formato esférico.",
-  "Sabias que para escapares a um ataque de tubarão basta subires a uma árvore! ;)",
+  "Sabias que para escapares a um ataque de tubarão basta subires a uma árvore!? ;)",
   "A efervescência do champanhe só existe porque há sujeira ou poeira na taça utilizada para bebê-lo. Se o copo estivesse 100% limpo não haveria espuma alguma.",
   "As letras J e Q não aparecem em lado nenhum da tabela periódica. Vá lá vá, verifica tu mesmo! Eu espero… ",
   "Um olho humano tem uma resolução de 576 megapixeis. Embrulha Apple!",
