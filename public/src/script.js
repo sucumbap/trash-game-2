@@ -10,17 +10,13 @@ const config = {
           gravity: { y: 0 } 
         } 
       },
-    
-    
       scene: {
         preload: preload,
         create: create,
         update: update
       }
     };
-    
-    
-    
+
 const game = new Phaser.Game(config);
     let cursors;
     let player;
