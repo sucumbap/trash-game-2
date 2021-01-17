@@ -213,10 +213,9 @@ function update(time, delta) {
   }
 }
 
-facts [
+let facts = [
   "A palavra “Física” vem do termo physis, que significa natureza, portanto, esta ciência dedica-se à compreensão de fenómenos naturais, reconstruindo-os por meio de experiências e descrevendo-os através de equações matemáticos.",
   "Se dois objetos de massas diferentes forem abandonados de uma mesma altura, chegarão ao solo ao mesmo tempo, se a resistência do ar puder ser desconsiderada. Ou seja, podemos largar uma bola de bowling e um berlinde da mesma altura, e vão chegar ao chão ao mesmo tempo.",
-  "Quando um raio alcança o solo, uma segunda descarga elétrica sobe do chão até as nuvens, seguindo o mesmo caminho que a energia usou para descer. O calor gerado por esse segundo raio faz com que o ar ao seu redor chegue a uma temperatura de até 27 mil °C. E como tudo acontece muito rápido, o ar não tem tempo de se expandir e acaba a se condensar, aumentando a muito sua pressão atmosférica. Esse ar, então,“explode” e cria uma onda de choque. É essa rápida expansão do ar que causa o barulho que ouvimos!",
   "A luz do Sol leva mais de 8 minutos para chegar à Terra e a sua temperatura chega a 5 500 ºC.",
   "O céu da Terra é azul porque as moléculas de azoto e de oxigénio, que formam a maior parte da atmosfera, filtram a componente azul da luz solar. Já em Marte, o céu é cor-de-rosa, em Urano é verde, em Vénus é amarelo-laranja, em Júpiter é preto e não se vêem estrelas, e em Plutão é negro, mas estrelado.",
   "Um espirro pode atingir uma velocidade alucinante - até 160 km por hora.",
