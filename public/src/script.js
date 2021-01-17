@@ -63,11 +63,11 @@ function create() {
     world.setTileLocationCallback(52, 50, 1, 1, null);
   });
 
-  // world.setTileLocationCallback(38, 26, 1, 1, ()=> {
-  //   //gangster da casa
-  //   alert(`Gangster diz: ${getFact(facts)}`);
-  //   world.setTileLocationCallback(36, 26, 1, 1, null);
-  // });
+  world.setTileLocationCallback(38, 26, 1, 1, ()=> {
+    //gangster da casa
+    alert(`Gangster diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(38, 26, 1, 1, null);
+  });
 
   world.setTileLocationCallback(8, 25, 1, 1, ()=> {
     //steve da casa
