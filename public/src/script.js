@@ -18,9 +18,10 @@ const config = {
     };
 
 const game = new Phaser.Game(config);
-    let cursors;
-    let player;
-    let showDebug = false;
+let cursors;
+let player;
+let showDebug = false;
+let collectedFacts = 0;
     
 function preload() {
   this.load.image("terreno", "./asside/tilesets/bigtileset.png");
@@ -54,6 +55,7 @@ function create() {
   world.setTileLocationCallback(21, 51, 2, 2, ()=> {
     //tree
     alert(`Árvore diz: O ano de 1995 foi o ano mais quente da Terra, pelo menos, desde há cento e quarenta anos, quando se iniciou o registo regular das temperaturas. Eu estava lá!`);
+    collectedFacts++;
     world.setTileLocationCallback(21, 51, 2, 2, null);
   });
 
@@ -137,6 +139,7 @@ function create() {
   world.setTileLocationCallback(29, 15, 1, 1, ()=> {
     //arvore
     alert(`Árvore diz: "Os cientistas da NASA acreditam que pode haver entre 100 a 400 biliões de estrelas na Via Láctea, reportado pela Snopes (site de verificação de factos). No entanto, um artigo de 2015 publicado na revista Nature, estimou que o número de árvores à volta do mundo é muito maior: 3,04 triliões."`);
+    collectedFacts++;
     world.setTileLocationCallback(29, 15, 1, 1, null);
   });
   world.setTileLocationCallback(54, 14, 1, 1, ()=> {
@@ -195,7 +198,7 @@ function create() {
   cursors = this.input.keyboard.createCursorKeys();
 
   this.add.
-  text(16, 16, `Use as setas para mover\n${facts.length}`, {
+  text(16, 16, `Use as setas para mover\n${collectedFacts}/19`, {
     font: "18px monospace",
     fill: "#000000",
     padding: { x: 20, y: 10 },
@@ -241,6 +244,7 @@ function update(time, delta) {
   if (prevVelocity.y < 0) player.setTexture("sprite", "misa-back");else
   if (prevVelocity.y > 0) player.setTexture("sprite", "misa-front");
   }
+  game.input.onDown.addOnce(updateText, this);
 }
 
 function getFact(facts) {
@@ -248,6 +252,7 @@ function getFact(facts) {
     let random = Math.floor(Math.random() * (facts.length));
     let theFact = facts.splice(random, 1);
     console.log(facts.length);
+    collectedFacts++;
     return theFact;
   } else {
     alert(`por favor recarregue a pagina alguma cena correu mal`)
@@ -267,10 +272,17 @@ let facts = [
   "O sangue circula a uma velocidade de 2 km por hora.",
   "Um adulto pisca os olhos 24 vezes por minuto e cada piscadela dura apenas 50 milésimos de segundo. Desta forma ficamos sem ver 1,2 segundos em cada minuto.",
   "Gotas de chuva não caem como gotas de lágrimas. A verdade é que elas têm formato esférico.",
-  "Gorilas dormem em ninhos construídos por eles mesmos. Os machos repousam no chão, mas as fêmeas adormecem em ninhos suspensos, presos em árvores.",
+  "Sabias que para escapares a um ataque de tubarão basta subires a uma árvore! ;)",
   "A efervescência do champanhe só existe porque há sujeira ou poeira na taça utilizada para bebê-lo. Se o copo estivesse 100% limpo não haveria espuma alguma.",
   "As letras J e Q não aparecem em lado nenhum da tabela periódica. Vá lá vá, verifica tu mesmo! Eu espero… ",
   "Um olho humano tem uma resolução de 576 megapixeis. Embrulha Apple!",
   "Antes do século 17, a ciência e os cientistas não eram reconhecidos como tal. Na verdade, eles eram chamados “filósofos naturais”, porque o conceito de cientista ainda não tinha sido inventado.",
   "Existem mais variações possíveis de jogos de xadrez (10 elevado a 120) do que átomos observáveis no universo (10 elevado a 80). Bazinga!"
 ];
+function updateText() {
+
+  count++;
+
+  text.setText(`Use as setas para mover\n${collectedFacts}/19`);
+
+}
