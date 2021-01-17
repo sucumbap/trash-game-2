@@ -197,7 +197,7 @@ function create() {
     
   cursors = this.input.keyboard.createCursorKeys();
 
-  this.add.
+  texto = this.add.
   text(16, 16, `Use as setas para mover\n${collectedFacts}/19`, {
     font: "18px monospace",
     fill: "#000000",
@@ -253,6 +253,7 @@ function getFact(facts) {
     let theFact = facts.splice(random, 1);
     console.log(facts.length);
     collectedFacts++;
+    texto.setText(`Use as setas para mover\n${collectedFacts}/19`)
     return theFact;
   } else {
     alert(`por favor recarregue a pagina alguma cena correu mal`)
@@ -279,10 +280,3 @@ let facts = [
   "Antes do século 17, a ciência e os cientistas não eram reconhecidos como tal. Na verdade, eles eram chamados “filósofos naturais”, porque o conceito de cientista ainda não tinha sido inventado.",
   "Existem mais variações possíveis de jogos de xadrez (10 elevado a 120) do que átomos observáveis no universo (10 elevado a 80). Bazinga!"
 ];
-function updateText() {
-
-  count++;
-
-  text.setText(`Use as setas para mover\n${collectedFacts}/19`);
-
-}
