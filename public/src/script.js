@@ -57,7 +57,7 @@ function create() {
 
   world.setTileLocationCallback(21, 51, 2, 2, ()=> {
     //tree
-    alert(`Árvore diz: O ano de 1995 foi o ano mais quente da Terra, pelo menos, desde há cento e quarenta anos, quando se iniciou o registo regular das temperaturas.`);
+    alert(`Árvore diz: O ano de 1995 foi o ano mais quente da Terra, pelo menos, desde há cento e quarenta anos, quando se iniciou o registo regular das temperaturas. Eu estava lá!`);
     world.setTileLocationCallback(21, 51, 2, 2, null);
   });
 
