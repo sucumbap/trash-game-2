@@ -63,11 +63,11 @@ function create() {
     world.setTileLocationCallback(52, 50, 1, 1, null);
   });
 
-  world.setTileLocationCallback(38, 26, 1, 1, ()=> {
-    //gangster da casa
-    alert(`Gangster diz: ${getFact(facts)}`);
-    world.setTileLocationCallback(36, 26, 1, 1, null);
-  });
+  // world.setTileLocationCallback(38, 26, 1, 1, ()=> {
+  //   //gangster da casa
+  //   alert(`Gangster diz: ${getFact(facts)}`);
+  //   world.setTileLocationCallback(36, 26, 1, 1, null);
+  // });
 
   world.setTileLocationCallback(8, 25, 1, 1, ()=> {
     //steve da casa
@@ -195,7 +195,7 @@ function create() {
   cursors = this.input.keyboard.createCursorKeys();
 
   this.add.
-  text(16, 16, 'Use as setas para mover', {
+  text(16, 16, `Use as setas para mover\n${facts.length}`, {
     font: "18px monospace",
     fill: "#000000",
     padding: { x: 20, y: 10 },
@@ -244,12 +244,13 @@ function update(time, delta) {
 }
 
 function getFact(facts) {
-  if (facts.length > 0) {
+  if (facts.length >= 0) {
     let random = Math.floor(Math.random() * (facts.length));
     let theFact = facts.splice(random, 1);
+    console.log(facts.length);
     return theFact;
   } else {
-    alert(`por favor recarregue a pagina somethig has gone terribly wrong`)
+    alert(`por favor recarregue a pagina alguma cena correu mal`)
   }
 };
 
