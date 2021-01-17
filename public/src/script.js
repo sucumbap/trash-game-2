@@ -165,7 +165,7 @@ function create() {
   cursors = this.input.keyboard.createCursorKeys();
 
   this.add.
-  text(16, 16, 'Setas para mover', {
+  text(16, 16, 'Use as setas para mover', {
     font: "18px monospace",
     fill: "#000000",
     padding: { x: 20, y: 10 },

@@ -1,4 +1,4 @@
-var ALERT_TITLE = "Welcome to"
+var ALERT_TITLE = "Estão a falar consigo!";
 var ALERT_BUTTON_TEXT = "Ok";
 
 if(document.getElementById) {
