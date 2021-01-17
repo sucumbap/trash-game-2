@@ -104,10 +104,10 @@ function create() {
     alert(`Baú diz: ${getFact(facts)}`);
     world.setTileLocationCallback(10, 53, 1, 1, null);
   });
-  world.setTileLocationCallback(10, 53, 1, 1, ()=> {
+  world.setTileLocationCallback(33, 51, 1, 1, ()=> {
     //gangster inicial
     alert(`Ladrão diz: ${getFact(facts)}`);
-    world.setTileLocationCallback(10, 53, 1, 1, null);
+    world.setTileLocationCallback(33, 51, 1, 1, null);
   });
   world.setTileLocationCallback(29, 42, 1, 1, ()=> {
     //farmer
@@ -244,6 +244,7 @@ function update(time, delta) {
 }
 
 function getFact(facts) {
+  if (facts.length > 0)
   let random = Math.floor(Math.random() * (facts.length));
   let theFact = facts.splice(random, 1);
   return theFact;
