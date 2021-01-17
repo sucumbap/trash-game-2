@@ -136,7 +136,7 @@ function create() {
   });
   world.setTileLocationCallback(29, 15, 1, 1, ()=> {
     //arvore
-    alert(`Árvore diz: ${getFact(facts)}`);
+    alert(`Árvore diz: "Os cientistas da NASA acreditam que pode haver entre 100 a 400 biliões de estrelas na Via Láctea, reportado pela Snopes (site de verificação de factos). No entanto, um artigo de 2015 publicado na revista Nature, estimou que o número de árvores à volta do mundo é muito maior: 3,04 triliões."`);
     world.setTileLocationCallback(29, 15, 1, 1, null);
   });
   world.setTileLocationCallback(54, 14, 1, 1, ()=> {
@@ -268,7 +268,6 @@ let facts = [
   "Gotas de chuva não caem como gotas de lágrimas. A verdade é que elas têm formato esférico.",
   "Gorilas dormem em ninhos construídos por eles mesmos. Os machos repousam no chão, mas as fêmeas adormecem em ninhos suspensos, presos em árvores.",
   "A efervescência do champanhe só existe porque há sujeira ou poeira na taça utilizada para bebê-lo. Se o copo estivesse 100% limpo não haveria espuma alguma.",
-  "Os cientistas da NASA acreditam que pode haver entre 100 a 400 biliões de estrelas na Via Láctea, reportado pela Snopes (site de verificação de factos). No entanto, um artigo de 2015 publicado na revista Nature, estimou que o número de árvores à volta do mundo é muito maior: 3,04 triliões.",
   "As letras J e Q não aparecem em lado nenhum da tabela periódica. Vá lá vá, verifica tu mesmo! Eu espero… ",
   "Um olho humano tem uma resolução de 576 megapixeis. Embrulha Apple!",
   "Antes do século 17, a ciência e os cientistas não eram reconhecidos como tal. Na verdade, eles eram chamados “filósofos naturais”, porque o conceito de cientista ainda não tinha sido inventado.",
