@@ -49,74 +49,63 @@ function create() {
   
   const spawnPoint = map.findObject("Objects", obj => obj.name === "Spawn Point");
 
-
   world.setTileLocationCallback(10, 55, 1, 1, ()=> {
     //steve inicial
-    let i = Math.floor((Math.random() * 8));
-    alert(`Steve diz: ${facts[i]}`);
+    alert(`Steve diz: ${getFact(facts)}`);
     world.setTileLocationCallback(10, 55, 1, 1, null);
   });
 
   world.setTileLocationCallback(21, 51, 2, 2, ()=> {
     //tree
-    let i = Math.floor((Math.random() * 8));
-    alert(`Árvore diz: ${facts[i]}`);
+    alert(`Árvore diz: O ano de 1995 foi o ano mais quente da Terra, pelo menos, desde há cento e quarenta anos, quando se iniciou o registo regular das temperaturas.`);
     world.setTileLocationCallback(21, 51, 2, 2, null);
   });
 
   world.setTileLocationCallback(52, 50, 1, 1, ()=> {
     //gajo do cemiterio
-    let i = Math.floor((Math.random() * 8));
-    alert(`Estátua diz: ${facts[i]}`);
+    alert(`Estátua diz: ${getFact(facts)}`);
     world.setTileLocationCallback(52, 50, 1, 1, null);
   });
 
   world.setTileLocationCallback(38, 26, 1, 1, ()=> {
     //gangster da casa
-    let i = Math.floor((Math.random() * 9));
-    alert(`Gangster diz: ${facts[i]}`);
+    alert(`Gangster diz: ${getFact(facts)}`);
     world.setTileLocationCallback(36, 26, 1, 1, null);
   });
 
   world.setTileLocationCallback(8, 25, 1, 1, ()=> {
     //steve da casa
-    let i = Math.floor((Math.random() * 8));
-    alert(`Steve diz: ${facts[i]}`);
+    alert(`Steve diz: ${getFact(facts)}`);
     world.setTileLocationCallback(8, 25, 1, 1, null);
   });
 
   world.setTileLocationCallback(2, 15, 1, 1, ()=> {
     //gangster da rua
-    let i = Math.floor((Math.random() * 8));
-    alert(`Gangster diz: ${facts[i]}`);
+    alert(`Gangster diz: ${getFact(facts)}`);
     world.setTileLocationCallback(2, 15, 1, 1, null);
   });
 
   world.setTileLocationCallback(12, 4, 1, 1, ()=> {
     //mago
-    let i = Math.floor((Math.random() * 8));
-    alert(`Mago diz: ${facts[i]}`);
+    alert(`Mago diz: ${getFact(facts)}`);
     world.setTileLocationCallback(12, 4, 1, 1, null);
   });
 
   world.setTileLocationCallback(12, 5, 1, 1, ()=> {
     //bau do mago
-    let i = Math.floor((Math.random() * 8));
-    alert(`Mago diz: ${facts[i]}`);
+    alert(`Mago diz: ${getFact(facts)}`);
     world.setTileLocationCallback(12, 5, 1, 1, null);
   });
 
   world.setTileLocationCallback(7, 33, 1, 1, ()=> {
     //bau da lagoa
-    let i = Math.floor((Math.random() * 8));
-    alert(`Baú diz: ${facts[i]}`);
+    alert(`Baú diz: ${getFact(facts)}`);
     world.setTileLocationCallback(7, 33, 1, 1, null);
   });
 
   world.setTileLocationCallback(10, 53, 1, 1, ()=> {
     //bau inicial
-    let i = Math.floor((Math.random() * 8));
-    alert(`Baú diz: ${facts[i]}`);
+    alert(`Baú diz: ${getFact(facts)}`);
     world.setTileLocationCallback(10, 53, 1, 1, null);
   });
     
@@ -213,6 +202,12 @@ function update(time, delta) {
   }
 }
 
+function getFact(facts) {
+  let random = Math.floor(Math.random() * (facts.length));
+  let theFact = facts.splice(random, 1);
+  return theFact;
+};
+
 let facts = [
   "A palavra “Física” vem do termo physis, que significa natureza, portanto, esta ciência dedica-se à compreensão de fenómenos naturais, reconstruindo-os por meio de experiências e descrevendo-os através de equações matemáticos.",
   "Se dois objetos de massas diferentes forem abandonados de uma mesma altura, chegarão ao solo ao mesmo tempo, se a resistência do ar puder ser desconsiderada. Ou seja, podemos largar uma bola de bowling e um berlinde da mesma altura, e vão chegar ao chão ao mesmo tempo.",
@@ -220,6 +215,12 @@ let facts = [
   "O céu da Terra é azul porque as moléculas de azoto e de oxigénio, que formam a maior parte da atmosfera, filtram a componente azul da luz solar. Já em Marte, o céu é cor-de-rosa, em Urano é verde, em Vénus é amarelo-laranja, em Júpiter é preto e não se vêem estrelas, e em Plutão é negro, mas estrelado.",
   "Um espirro pode atingir uma velocidade alucinante - até 160 km por hora.",
   "Os cadernos da cientista Marie Curie, responsável pela descoberta dos elementos químicos polónio e rádio, ainda são radioativos! O longo período de exposição à radioatividade foi fatal para Marie Curie e, mesmo mais de um século depois das experiências, os cadernos que ela usava continuam altamente perigosos.",
-  "O ano de 1995 foi o ano mais quente da Terra, pelo menos, desde há cento e quarenta anos, quando se iniciou o registo regular das temperaturas.",
-  "A água pura em si não conduz eletricidade. São as impurezas na água, como o sal, que o fazem. Mas como a água com que nos deparamos diariamente não é 100% pura, o melhor a fazer é manter o secador longe da banheira."
+  "A água pura em si não conduz eletricidade. São as impurezas na água, como o sal, que o fazem. Mas como a água com que nos deparamos diariamente não é 100% pura, o melhor a fazer é manter o secador longe da banheira.",
+  "O corpo de um recém-nascido tem 300 ossos, apesar de num adulto existirem apenas 206. Isto acontece porque durante a vida alguns ossos vão-se fundindo, transformando-se num só.",
+  "O corpo humano carrega cerca de 4 litros de sangue, que irrigam uma rede de 200 000 km de artérias, veias e capilares.",
+  "O sangue circula a uma velocidade de 2 km por hora.",
+  "Um adulto pisca os olhos 24 vezes por minuto e cada piscadela dura apenas 50 milésimos de segundo. Desta forma ficamos sem ver 1,2 segundos em cada minuto.",
+  "Gotas de chuva não caem como gotas de lágrimas. A verdade é que elas têm formato esférico.",
+  "Gorilas dormem em ninhos construídos por eles mesmos. Os machos repousam no chão, mas as fêmeas adormecem em ninhos suspensos, presos em árvores.",
+  "A efervescência do champanhe só existe porque há sujeira ou poeira na taça utilizada para bebê-la. Se o copo estivesse 100% limpo não haveria espuma alguma."
 ];
