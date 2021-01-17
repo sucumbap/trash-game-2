@@ -205,7 +205,7 @@ function getFact(facts) {
 };
 
 let facts = [
-  "A palavra “Física” vem do termo physis, que significa natureza, portanto, esta ciência dedica-se à compreensão de fenómenos naturais, reconstruindo-os por meio de experiências e descrevendo-os através de equações matemáticos.",
+  "A palavra “Física” vem do termo physis, que significa natureza, portanto, esta ciência dedica-se à compreensão de fenómenos naturais, reconstruindo-os por meio de experiências e descrevendo-os através de equações matemáticas.",
   "Se dois objetos de massas diferentes forem abandonados de uma mesma altura, chegarão ao solo ao mesmo tempo, se a resistência do ar puder ser desconsiderada. Ou seja, podemos largar uma bola de bowling e um berlinde da mesma altura, e vão chegar ao chão ao mesmo tempo.",
   "A luz do Sol leva mais de 8 minutos para chegar à Terra e a sua temperatura chega a 5 500 ºC.",
   "O céu da Terra é azul porque as moléculas de azoto e de oxigénio, que formam a maior parte da atmosfera, filtram a componente azul da luz solar. Já em Marte, o céu é cor-de-rosa, em Urano é verde, em Vénus é amarelo-laranja, em Júpiter é preto e não se vêem estrelas, e em Plutão é negro, mas estrelado.",
@@ -218,5 +218,10 @@ let facts = [
   "Um adulto pisca os olhos 24 vezes por minuto e cada piscadela dura apenas 50 milésimos de segundo. Desta forma ficamos sem ver 1,2 segundos em cada minuto.",
   "Gotas de chuva não caem como gotas de lágrimas. A verdade é que elas têm formato esférico.",
   "Gorilas dormem em ninhos construídos por eles mesmos. Os machos repousam no chão, mas as fêmeas adormecem em ninhos suspensos, presos em árvores.",
-  "A efervescência do champanhe só existe porque há sujeira ou poeira na taça utilizada para bebê-la. Se o copo estivesse 100% limpo não haveria espuma alguma."
+  "A efervescência do champanhe só existe porque há sujeira ou poeira na taça utilizada para bebê-lo. Se o copo estivesse 100% limpo não haveria espuma alguma.",
+  "Os cientistas da NASA acreditam que pode haver entre 100 a 400 biliões de estrelas na Via Láctea, reportado pela Snopes (site de verificação de factos). No entanto, um artigo de 2015 publicado na revista Nature, estimou que o número de árvores à volta do mundo é muito maior: 3,04 triliões.",
+  "As letras J e Q não aparecem em lado nenhum da tabela periódica. Vá lá vá, verifica tu mesmo! Eu espero… ",
+  "Um olho humano tem uma resolução de 576 megapixeis. Embrulha Apple!",
+  "Antes do século 17, a ciência e os cientistas não eram reconhecidos como tal. Na verdade, eles eram chamados “filósofos naturais”, porque o conceito de cientista ainda não tinha sido inventado.",
+  "Existem mais variações possíveis de jogos de xadrez (10 elevado a 120) do que átomos observáveis no universo (10 elevado a 80). Bazinga!"
 ];
