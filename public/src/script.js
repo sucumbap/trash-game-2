@@ -67,7 +67,7 @@ function create() {
   world.setTileLocationCallback(52, 50, 1, 1, ()=> {
     //gajo do cemiterio
     let i = Math.floor((Math.random() * 8));
-    alert(`Gravekeeper diz: ${facts[i]}`);
+    alert(`Estátua diz: ${facts[i]}`);
     world.setTileLocationCallback(52, 50, 1, 1, null);
   });
 
@@ -165,7 +165,7 @@ function create() {
   cursors = this.input.keyboard.createCursorKeys();
 
   this.add.
-  text(16, 16, 'Arrow keys to move', {
+  text(16, 16, 'Setas para mover', {
     font: "18px monospace",
     fill: "#000000",
     padding: { x: 20, y: 10 },
