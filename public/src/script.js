@@ -244,10 +244,13 @@ function update(time, delta) {
 }
 
 function getFact(facts) {
-  //if (facts.length > 0) 
-  let random = Math.floor(Math.random() * (facts.length));
-  let theFact = facts.splice(random, 1);
-  return theFact;
+  if (facts.length > 0) {
+    let random = Math.floor(Math.random() * (facts.length));
+    let theFact = facts.splice(random, 1);
+    return theFact;
+  } else {
+    alert(`por favor recarregue a pagina somethig has gone terribly wrong`)
+  }
 };
 
 let facts = [
