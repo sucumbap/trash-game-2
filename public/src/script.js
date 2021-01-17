@@ -244,7 +244,7 @@ function update(time, delta) {
   if (prevVelocity.y < 0) player.setTexture("sprite", "misa-back");else
   if (prevVelocity.y > 0) player.setTexture("sprite", "misa-front");
   }
-  game.input.onDown.addOnce(updateText, this);
+  //game.input.onDown.addOnce(updateText, this);
 }
 
 function getFact(facts) {
