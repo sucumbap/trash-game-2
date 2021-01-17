@@ -93,7 +93,7 @@ function create() {
 
   world.setTileLocationCallback(12, 5, 1, 1, ()=> {
     //bau do mago
-    alert(`Mago diz: ${getFact(facts)}`);
+    alert(`Baú diz: ${getFact(facts)}`);
     world.setTileLocationCallback(12, 5, 1, 1, null);
   });
 
