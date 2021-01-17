@@ -52,21 +52,21 @@ function create() {
 
   world.setTileLocationCallback(10, 55, 1, 1, ()=> {
     //steve inicial
-    let i = Math.floor((Math.random() * 9));
+    let i = Math.floor((Math.random() * 8));
     alert(`Steve diz: ${facts[i]}`);
     world.setTileLocationCallback(10, 55, 1, 1, null);
   });
 
   world.setTileLocationCallback(21, 51, 2, 2, ()=> {
     //tree
-    let i = Math.floor((Math.random() * 9));
+    let i = Math.floor((Math.random() * 8));
     alert(`Árvore diz: ${facts[i]}`);
     world.setTileLocationCallback(21, 51, 2, 2, null);
   });
 
   world.setTileLocationCallback(52, 50, 1, 1, ()=> {
     //gajo do cemiterio
-    let i = Math.floor((Math.random() * 9));
+    let i = Math.floor((Math.random() * 8));
     alert(`Gravekeeper diz: ${facts[i]}`);
     world.setTileLocationCallback(52, 50, 1, 1, null);
   });
@@ -80,42 +80,42 @@ function create() {
 
   world.setTileLocationCallback(8, 25, 1, 1, ()=> {
     //steve da casa
-    let i = Math.floor((Math.random() * 9));
+    let i = Math.floor((Math.random() * 8));
     alert(`Steve diz: ${facts[i]}`);
     world.setTileLocationCallback(8, 25, 1, 1, null);
   });
 
   world.setTileLocationCallback(2, 15, 1, 1, ()=> {
     //gangster da rua
-    let i = Math.floor((Math.random() * 9));
+    let i = Math.floor((Math.random() * 8));
     alert(`Gangster diz: ${facts[i]}`);
     world.setTileLocationCallback(2, 15, 1, 1, null);
   });
 
   world.setTileLocationCallback(12, 4, 1, 1, ()=> {
     //mago
-    let i = Math.floor((Math.random() * 9));
+    let i = Math.floor((Math.random() * 8));
     alert(`Mago diz: ${facts[i]}`);
     world.setTileLocationCallback(12, 4, 1, 1, null);
   });
 
   world.setTileLocationCallback(12, 5, 1, 1, ()=> {
     //bau do mago
-    let i = Math.floor((Math.random() * 9));
+    let i = Math.floor((Math.random() * 8));
     alert(`Mago diz: ${facts[i]}`);
     world.setTileLocationCallback(12, 5, 1, 1, null);
   });
 
   world.setTileLocationCallback(7, 33, 1, 1, ()=> {
     //bau da lagoa
-    let i = Math.floor((Math.random() * 9));
+    let i = Math.floor((Math.random() * 8));
     alert(`Baú diz: ${facts[i]}`);
     world.setTileLocationCallback(7, 33, 1, 1, null);
   });
 
   world.setTileLocationCallback(10, 53, 1, 1, ()=> {
     //bau inicial
-    let i = Math.floor((Math.random() * 9));
+    let i = Math.floor((Math.random() * 8));
     alert(`Baú diz: ${facts[i]}`);
     world.setTileLocationCallback(10, 53, 1, 1, null);
   });
