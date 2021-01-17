@@ -47,108 +47,108 @@ function create() {
   const spawnPoint = map.findObject("Objects", obj => obj.name === "Spawn Point");
 
   world.setTileLocationCallback(10, 55, 1, 1, ()=> {
-    //steve inicial
+    //steve inicial 1
     alert(`Steve diz: ${getFact(facts)}`);
     world.setTileLocationCallback(10, 55, 1, 1, null);
   });
 
   world.setTileLocationCallback(21, 51, 2, 2, ()=> {
-    //tree
+    //tree 2
     alert(`Árvore diz: O ano de 1995 foi o ano mais quente da Terra, pelo menos, desde há cento e quarenta anos, quando se iniciou o registo regular das temperaturas. Eu estava lá!`);
     collectedFacts++;
     world.setTileLocationCallback(21, 51, 2, 2, null);
   });
 
   world.setTileLocationCallback(52, 50, 1, 1, ()=> {
-    //gajo do cemiterio
+    //gajo do cemiterio 3
     alert(`Estátua diz: ${getFact(facts)}`);
     world.setTileLocationCallback(52, 50, 1, 1, null);
   });
 
   world.setTileLocationCallback(38, 26, 1, 1, ()=> {
-    //gangster da casa
+    //gangster da casa 4
     alert(`Gangster diz: ${getFact(facts)}`);
     world.setTileLocationCallback(38, 26, 1, 1, null);
   });
 
   world.setTileLocationCallback(8, 25, 1, 1, ()=> {
-    //steve da casa
+    //steve da casa 5
     alert(`Steve diz: ${getFact(facts)}`);
     world.setTileLocationCallback(8, 25, 1, 1, null);
   });
 
   world.setTileLocationCallback(2, 15, 1, 1, ()=> {
-    //gangster da rua
+    //gangster da rua 6
     alert(`Gangster diz: ${getFact(facts)}`);
     world.setTileLocationCallback(2, 15, 1, 1, null);
   });
 
   world.setTileLocationCallback(13, 4, 1, 1, ()=> {
-    //mago
+    //mago 7
     alert(`Mago diz: ${getFact(facts)}`);
     world.setTileLocationCallback(13, 4, 1, 1, null);
   });
 
   world.setTileLocationCallback(12, 5, 1, 1, ()=> {
-    //bau do mago
+    //bau do mago 8
     alert(`Baú diz: ${getFact(facts)}`);
     world.setTileLocationCallback(12, 5, 1, 1, null);
   });
 
   world.setTileLocationCallback(7, 33, 1, 1, ()=> {
-    //bau da lagoa
+    //bau da lagoa 9
     alert(`Baú diz: ${getFact(facts)}`);
     world.setTileLocationCallback(7, 33, 1, 1, null);
   });
 
   world.setTileLocationCallback(10, 53, 1, 1, ()=> {
-    //bau inicial
+    //bau inicial 10
     alert(`Baú diz: ${getFact(facts)}`);
     world.setTileLocationCallback(10, 53, 1, 1, null);
   });
   world.setTileLocationCallback(33, 51, 1, 1, ()=> {
-    //gangster inicial
+    //gangster inicial 11
     alert(`Ladrão diz: ${getFact(facts)}`);
     world.setTileLocationCallback(33, 51, 1, 1, null);
   });
   world.setTileLocationCallback(29, 42, 1, 1, ()=> {
-    //farmer
+    //farmer 12
     alert(`Agricultor diz: ${getFact(facts)}`);
     world.setTileLocationCallback(29, 42, 1, 1, null);
   });
   world.setTileLocationCallback(10, 43, 1, 1, ()=> {
-    //estatua da relva
+    //estatua da relva 13
     alert(`Estátua diz: ${getFact(facts)}`);
     world.setTileLocationCallback(10, 43, 1, 1, null);
   });
   world.setTileLocationCallback(41, 37, 1, 1, ()=> {
-    //aldeão
+    //aldeão 14
     alert(`Aldeão diz: ${getFact(facts)}`);
     world.setTileLocationCallback(41, 37, 1, 1, null);
   });
   world.setTileLocationCallback(30, 25, 1, 1, ()=> {
-    //Nobre
+    //Nobre 15
     alert(`Nobre diz: ${getFact(facts)}`);
     world.setTileLocationCallback(30, 25, 1, 1, null);
   });
   world.setTileLocationCallback(22, 26, 1, 1, ()=> {
-    //Blacksmith estátua
+    //Blacksmith estátua 16
     alert(`Estátua diz: ${getFact(facts)}`);
     world.setTileLocationCallback(22, 26, 1, 1, null);
   });
   world.setTileLocationCallback(29, 15, 1, 1, ()=> {
-    //arvore
+    //arvore 17 
     alert(`Árvore diz: "Os cientistas da NASA acreditam que pode haver entre 100 a 400 biliões de estrelas na Via Láctea, reportado pela Snopes (site de verificação de factos). No entanto, um artigo de 2015 publicado na revista Nature, estimou que o número de árvores à volta do mundo é muito maior: 3,04 triliões."`);
     collectedFacts++;
     world.setTileLocationCallback(29, 15, 1, 1, null);
   });
   world.setTileLocationCallback(54, 14, 1, 1, ()=> {
-    //robin hood
+    //robin hood 18
     alert(`Robin Hood diz: ${getFact(facts)}`);
     world.setTileLocationCallback(54, 14, 1, 1, null);
   });
   world.setTileLocationCallback(46, 4, 1, 1, ()=> {
-    //espirito da lagoa
+    //espirito da lagoa 19
     alert(`Espírito da Lagoa diz: ${getFact(facts)}`);
     world.setTileLocationCallback(46, 4, 1, 1, null);
   });
