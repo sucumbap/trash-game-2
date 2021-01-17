@@ -104,7 +104,52 @@ function create() {
     alert(`Baú diz: ${getFact(facts)}`);
     world.setTileLocationCallback(10, 53, 1, 1, null);
   });
-    
+  world.setTileLocationCallback(10, 53, 1, 1, ()=> {
+    //gangster inicial
+    alert(`Ladrão diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(10, 53, 1, 1, null);
+  });
+  world.setTileLocationCallback(29, 42, 1, 1, ()=> {
+    //farmer
+    alert(`Agricultor diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(29, 42, 1, 1, null);
+  });
+  world.setTileLocationCallback(10, 43, 1, 1, ()=> {
+    //estatua da relva
+    alert(`Estátua diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(10, 43, 1, 1, null);
+  });
+  world.setTileLocationCallback(41, 37, 1, 1, ()=> {
+    //aldeão
+    alert(`Aldeão diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(41, 37, 1, 1, null);
+  });
+  world.setTileLocationCallback(30, 25, 1, 1, ()=> {
+    //Nobre
+    alert(`Nobre diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(30, 25, 1, 1, null);
+  });
+  world.setTileLocationCallback(22, 26, 1, 1, ()=> {
+    //Blacksmith estátua
+    alert(`Estátua diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(22, 26, 1, 1, null);
+  });
+  world.setTileLocationCallback(29, 15, 1, 1, ()=> {
+    //arvore
+    alert(`Árvore diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(29, 15, 1, 1, null);
+  });
+  world.setTileLocationCallback(54, 14, 1, 1, ()=> {
+    //robin hood
+    alert(`Robin Hood diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(54, 14, 1, 1, null);
+  });
+  world.setTileLocationCallback(46, 4, 1, 1, ()=> {
+    //espirito da lagoa
+    alert(`Espírito da Lagoa diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(46, 4, 1, 1, null);
+  });
+
   player = this.physics.add.sprite(spawnPoint.x, spawnPoint.y, "sprite", "misa-front").
   setSize(30, 40).
   setOffset(0, 24);
