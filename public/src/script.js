@@ -85,10 +85,10 @@ function create() {
     world.setTileLocationCallback(2, 15, 1, 1, null);
   });
 
-  world.setTileLocationCallback(12, 4, 1, 1, ()=> {
+  world.setTileLocationCallback(13, 4, 1, 1, ()=> {
     //mago
     alert(`Mago diz: ${getFact(facts)}`);
-    world.setTileLocationCallback(12, 4, 1, 1, null);
+    world.setTileLocationCallback(13, 4, 1, 1, null);
   });
 
   world.setTileLocationCallback(12, 5, 1, 1, ()=> {
