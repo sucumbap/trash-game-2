@@ -56,6 +56,7 @@ function create() {
     //tree 2
     alert(`Árvore diz: O ano de 1995 foi o ano mais quente da Terra, pelo menos, desde há cento e quarenta anos, quando se iniciou o registo regular das temperaturas. Eu estava lá!`);
     collectedFacts++;
+    texto.setText(`Use as setas para mover\n${collectedFacts}/20`);
     world.setTileLocationCallback(21, 51, 2, 2, null);
   });
 
@@ -140,6 +141,7 @@ function create() {
     //arvore 17 
     alert(`Árvore diz: "Os cientistas da NASA acreditam que pode haver entre 100 a 400 biliões de estrelas na Via Láctea, reportado pela Snopes (site de verificação de factos). No entanto, um artigo de 2015 publicado na revista Nature, estimou que o número de árvores à volta do mundo é muito maior: 3,04 triliões."`);
     collectedFacts++;
+    texto.setText(`Use as setas para mover\n${collectedFacts}/20`);
     world.setTileLocationCallback(29, 15, 1, 1, null);
   });
   world.setTileLocationCallback(54, 14, 1, 1, ()=> {
@@ -198,7 +200,7 @@ function create() {
   cursors = this.input.keyboard.createCursorKeys();
 
   texto = this.add.
-  text(16, 16, `Use as setas para mover\n${collectedFacts}/19`, {
+  text(16, 16, `Use as setas para mover\n${collectedFacts}/20`, {
     font: "18px monospace",
     fill: "#000000",
     padding: { x: 20, y: 10 },
@@ -253,7 +255,7 @@ function getFact(facts) {
     let theFact = facts.splice(random, 1);
     console.log(facts.length);
     collectedFacts++;
-    texto.setText(`Use as setas para mover\n${collectedFacts}/19`)
+    texto.setText(`Use as setas para mover\n${collectedFacts}/20`);
     return theFact;
   } else {
     alert(`por favor recarregue a pagina alguma cena correu mal`)
