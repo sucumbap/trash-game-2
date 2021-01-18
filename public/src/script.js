@@ -251,7 +251,6 @@ function update(time, delta) {
   if (prevVelocity.y < 0) player.setTexture("sprite", "misa-back");else
   if (prevVelocity.y > 0) player.setTexture("sprite", "misa-front");
   }
-  //game.input.onDown.addOnce(updateText, this);
 }
 
 function getFact(facts) {
@@ -263,7 +262,7 @@ function getFact(facts) {
     texto.setText(`Use as setas para mover\n${collectedFacts}/20`);
     return theFact;
   } else {
-    alert(`por favor recarregue a pagina alguma cena correu mal`)
+    alert(`por favor recarregue a pagina alguma cena correu mal, stoopid`);
   }
 };
 
