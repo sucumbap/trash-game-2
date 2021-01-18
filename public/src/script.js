@@ -56,6 +56,9 @@ function create() {
     //tree 2
     alert(`Árvore diz: O ano de 1995 foi o ano mais quente da Terra, pelo menos, desde há cento e quarenta anos, quando se iniciou o registo regular das temperaturas. Eu estava lá!`);
     collectedFacts++;
+    if (collectedFacts == 20) {
+      texto.setText(`Use as setas para mover\nTens que voltar para o spawn depois de coletares todos os factos\n${collectedFacts}/20`);
+    }
     texto.setText(`Use as setas para mover\n${collectedFacts}/20`);
     world.setTileLocationCallback(21, 51, 2, 2, null);
   });
@@ -141,6 +144,9 @@ function create() {
     //arvore 17 
     alert(`Árvore diz: "Os cientistas da NASA acreditam que pode haver entre 100 a 400 biliões de estrelas na Via Láctea, reportado pela Snopes (site de verificação de factos). No entanto, um artigo de 2015 publicado na revista Nature, estimou que o número de árvores à volta do mundo é muito maior: 3,04 triliões."`);
     collectedFacts++;
+    if (collectedFacts == 20) {
+      texto.setText(`Use as setas para mover\nTens que voltar para o spawn depois de coletares todos os factos\n${collectedFacts}/20`);
+    }
     texto.setText(`Use as setas para mover\n${collectedFacts}/20`);
     world.setTileLocationCallback(29, 15, 1, 1, null);
   });
@@ -159,6 +165,17 @@ function create() {
     alert(`Estátua da Páscoa diz: ${getFact(facts)}`);
     world.setTileLocationCallback(58, 51, 1, 1, null);
   });
+  world.setTileLocationCallback(11, 58, 1, 1, ()=> {
+    if (collectedFacts == 20) {
+      alert("Parabéms ganhas-te, absolutamenta nada sem ser conhecimento como dizem nos kids shows!");
+      setTimeout(reset, 5000);
+    } else {
+      console.log("not yet");
+    }
+  });
+  function reset() {
+    window.location.assign("index.html");
+  } 
 
   player = this.physics.add.sprite(spawnPoint.x, spawnPoint.y, "sprite", "misa-front").
   setSize(30, 40).
@@ -216,7 +233,7 @@ function create() {
 }  
     
 function update(time, delta) {
-  const speed = 175;
+  const speed = 600;//175;
   const prevVelocity = player.body.velocity.clone();
     
   player.body.setVelocity(0);
@@ -260,17 +277,15 @@ function getFact(facts) {
     console.log(facts.length);
     collectedFacts++;
     texto.setText(`Use as setas para mover\n${collectedFacts}/20`);
+    if (collectedFacts == 20) {
+      texto.setText(`Use as setas para mover\nTens que voltar para o spawn depois de coletares todos os factos\n${collectedFacts}/20`);
+    }
     return theFact;
   } else {
     alert(`por favor recarregue a pagina alguma cena correu mal, stoopid`);
   }
 }
-function finishUwU() {
-  if(collectedFacts = 20) {
-    alert("Parabéns passas-te o jogo!");
-    window.location.href="index.html";
-  }
-}
+
 
 let facts = [
   "A palavra “Física” vem do termo physis, que significa natureza, portanto, esta ciência dedica-se à compreensão de fenómenos naturais, reconstruindo-os por meio de experiências e descrevendo-os através de equações matemáticas.",
