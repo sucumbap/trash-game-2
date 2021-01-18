@@ -154,6 +154,11 @@ function create() {
     alert(`Espírito da Lagoa diz: ${getFact(facts)}`);
     world.setTileLocationCallback(46, 4, 1, 1, null);
   });
+  world.setTileLocationCallback(58, 51, 1, 1, ()=> {
+    //Estátua da Páscoa
+    alert(`Estátua da Páscoa diz: ${getFact(facts)}`);
+    world.setTileLocationCallback(58, 51, 1, 1, null);
+  });
 
   player = this.physics.add.sprite(spawnPoint.x, spawnPoint.y, "sprite", "misa-front").
   setSize(30, 40).
