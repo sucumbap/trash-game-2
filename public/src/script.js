@@ -264,7 +264,13 @@ function getFact(facts) {
   } else {
     alert(`por favor recarregue a pagina alguma cena correu mal, stoopid`);
   }
-};
+}
+function finishUwU() {
+  if(collectedFacts = 20) {
+    alert("Parabéns passas-te o jogo!");
+    window.location.href="index.html";
+  }
+}
 
 let facts = [
   "A palavra “Física” vem do termo physis, que significa natureza, portanto, esta ciência dedica-se à compreensão de fenómenos naturais, reconstruindo-os por meio de experiências e descrevendo-os através de equações matemáticas.",
