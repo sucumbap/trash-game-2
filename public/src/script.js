@@ -14,8 +14,11 @@ const config = {
         preload: preload,
         create: create,
         update: update
-      }
-    };
+      },
+  audio: {
+    disableWebAudio: true
+  }
+};
 
 const game = new Phaser.Game(config);
 let cursors;
@@ -28,9 +31,13 @@ function preload() {
     
   this.load.tilemapTiledJSON("map", "./asside/maps/greg3.json");
   this.load.atlas("sprite", "./asside/sprite/misa.png", "./asside/sprite/misa.json");
+  this.load.audio('new-bark-town', ['asside/audio/new-bark-town.mp3']);
 }
     
 function create() {
+  // let backgroundMusic = this.add.audio('new-bark-town');
+  // backgroundMusic.loop = true;
+  // backgroundMusic.play();
   const map = this.make.tilemap({ key: "map" });
   const tileset = map.addTilesetImage("bigtileset", "terreno");
     
@@ -230,10 +237,11 @@ function create() {
 
   setScrollFactor(0).
   setDepth(30);
+
 }  
     
 function update(time, delta) {
-  const speed = 600;//175;
+  const speed = 175;
   const prevVelocity = player.body.velocity.clone();
     
   player.body.setVelocity(0);
