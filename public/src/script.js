@@ -35,8 +35,8 @@ function preload() {
 }
     
 function create() {
-  // let backgroundMusic = this.add.audio('new-bark-town');
-  // backgroundMusic.loop = true;
+  this.soundFX = this.sound.add('new-bark-town');
+  this.soundFX.play();
   // backgroundMusic.play();
   const map = this.make.tilemap({ key: "map" });
   const tileset = map.addTilesetImage("bigtileset", "terreno");
