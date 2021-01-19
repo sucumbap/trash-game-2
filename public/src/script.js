@@ -31,11 +31,11 @@ function preload() {
     
   this.load.tilemapTiledJSON("map", "./asside/maps/greg3.json");
   this.load.atlas("sprite", "./asside/sprite/misa.png", "./asside/sprite/misa.json");
-  this.load.audio('new-bark-town', ['asside/audio/new-bark-town.mp3']);
+  this.load.audio('semi_8_bit_but_more_stuff', ['asside/audio/semi_8_bit_but_more_stuff.mp3']);
 }
     
 function create() {
-  this.soundFX = this.sound.add('new-bark-town');
+  this.soundFX = this.sound.add('semi_8_bit_but_more_stuff');
   this.soundFX.play();
   // backgroundMusic.play();
   const map = this.make.tilemap({ key: "map" });
