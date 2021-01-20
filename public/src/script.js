@@ -35,9 +35,7 @@ function preload() {
 }
     
 function create() {
-  // this.soundFX = this.sound.add('semi_8_bit_but_more_stuff');
-  // this.soundFX.play();
-
+  this.soundFX = this.sound.add('semi_8_bit_but_more_stuff', { loop: true});
 
   const map = this.make.tilemap({ key: "map" });
   const tileset = map.addTilesetImage("bigtileset", "terreno");
@@ -248,6 +246,7 @@ let r = false;
 function update(time, delta) {
   const speed = 175;
   const prevVelocity = player.body.velocity.clone();
+  this.soundFX.play();
     
   player.body.setVelocity(0);
     
