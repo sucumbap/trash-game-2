@@ -35,9 +35,10 @@ function preload() {
 }
     
 function create() {
-  this.soundFX = this.sound.add('semi_8_bit_but_more_stuff');
-  this.soundFX.play();
-  // backgroundMusic.play();
+  // this.soundFX = this.sound.add('semi_8_bit_but_more_stuff');
+  // this.soundFX.play();
+
+
   const map = this.make.tilemap({ key: "map" });
   const tileset = map.addTilesetImage("bigtileset", "terreno");
     
@@ -238,7 +239,11 @@ function create() {
   setScrollFactor(0).
   setDepth(30);
 
-}  
+}
+let u = false;
+let d = false;
+let l = false;
+let r = false;
     
 function update(time, delta) {
   const speed = 175;
@@ -246,27 +251,27 @@ function update(time, delta) {
     
   player.body.setVelocity(0);
     
-  if (cursors.left.isDown) {
+  if (cursors.left.isDown || l == true) {
     player.body.setVelocityX(-speed);
-  } else if (cursors.right.isDown) {
+  } else if (cursors.right.isDown || r == true) {
     player.body.setVelocityX(speed);
   }
     
-  if (cursors.up.isDown) {
+  if (cursors.up.isDown || u == true) {
     player.body.setVelocityY(-speed);
-  } else if (cursors.down.isDown) {
+  } else if (cursors.down.isDown || d == true) {
     player.body.setVelocityY(speed);
   }
     
   player.body.velocity.normalize().scale(speed);
     
-  if (cursors.left.isDown) {
+  if (cursors.left.isDown || l == true) {
     player.anims.play("misa-left-walk", true);
-  } else if (cursors.right.isDown) {
+  } else if (cursors.right.isDown || r == true) {
     player.anims.play("misa-right-walk", true);
-  } else if (cursors.up.isDown) {
+  } else if (cursors.up.isDown || u == true) {
     player.anims.play("misa-back-walk", true);
-  } else if (cursors.down.isDown) {
+  } else if (cursors.down.isDown || d == true) {
     player.anims.play("misa-front-walk", true);
   } else {
   player.anims.stop();
@@ -276,6 +281,16 @@ function update(time, delta) {
   if (prevVelocity.y < 0) player.setTexture("sprite", "misa-back");else
   if (prevVelocity.y > 0) player.setTexture("sprite", "misa-front");
   }
+
+  aUp.addEventListener('touchstart', ()=>{u = true});
+  aDown.addEventListener('touchstart', ()=>{d = true});
+  aLeft.addEventListener('touchstart', ()=>{l = true});
+  aRight.addEventListener('touchstart', ()=>{r = true});
+
+  aUp.addEventListener('touchend', ()=>{u = false;});
+  aDown.addEventListener('touchend', ()=>{d = false;});
+  aLeft.addEventListener('touchend', ()=>{l = false;});
+  aRight.addEventListener('touchend', ()=>{r = false;});
 }
 
 function getFact(facts) {

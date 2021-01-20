@@ -141,3 +141,51 @@ code span {
   margin-left: auto;
   margin-right: auto;
 }
+#aUp {
+  margin: 0;
+  padding: 0;
+  top: 30px;
+  left: 50%;
+  width:72px;
+  height: 72px;
+  position: absolute;
+  z-index: 999;
+  background-color: pink;
+  background-image: url("asside/imgs/arrow-up.png");
+}
+#aDown {
+  margin: 0;
+  padding: 0;
+  bottom: 30px;
+  left: 50%;
+  width:72px;
+  height: 72px;
+  position: absolute;
+  z-index: 999;
+  background-color: pink;
+  background-image: url("asside/imgs/arrow-up.png");
+}
+#aLeft {
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 10px;
+  width:72px;
+  height: 72px;
+  position: absolute;
+  z-index: 999;
+  background-color: pink;
+  background-image: url("asside/imgs/arrow-up.png");
+}
+#aRight {
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  right: 10px;
+  width:72px;
+  height: 72px;
+  position: absolute;
+  z-index: 999;
+  background-color: pink;
+  background-image: url("asside/imgs/arrow-up.png");
+}
