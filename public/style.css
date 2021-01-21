@@ -144,8 +144,8 @@ code span {
 #aUp {
   margin: 0;
   padding: 0;
-  top: 30px;
-  left: 50%;
+  top: 3%;
+  left: 48%;
   width:72px;
   height: 72px;
   position: absolute;
@@ -156,8 +156,8 @@ code span {
 #aDown {
   margin: 0;
   padding: 0;
-  bottom: 30px;
-  left: 50%;
+  bottom: 1%;
+  left: 48%;
   width:72px;
   height: 72px;
   position: absolute;
@@ -168,8 +168,8 @@ code span {
 #aLeft {
   margin: 0;
   padding: 0;
-  top: 50%;
-  left: 10px;
+  top: 48%;
+  left: 5%;
   width:72px;
   height: 72px;
   position: absolute;
@@ -180,8 +180,8 @@ code span {
 #aRight {
   margin: 0;
   padding: 0;
-  top: 50%;
-  right: 10px;
+  top: 48%;
+  right: 5%;
   width:72px;
   height: 72px;
   position: absolute;
